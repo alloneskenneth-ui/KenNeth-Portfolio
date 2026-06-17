@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KenNeth | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ───────────────── NAVIGATION ───────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>KenNeth<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">My Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ───────────────── HOME / HERO ───────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">
+        <span class="glitch" data-text="Kenneth">Kenneth</span>
+      </h1>
+      
+      <p class="hero-desc">
+        A Bachelor of Science in Information Systems student at Davao del Norte State College. I am passionate about technology and information systems, and I continuously strive to develop my skills and knowledge to prepare for a successful career in the IT industry.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#about" class="btn btn-outline">About Me</a>
+      </div>
+      
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ───────────────── MY PROJECTS ───────────────── -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">// What I've Built</p>
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+        <p class="section-desc">A showcase of real-world projects I've designed and developed.</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-filter="web">
+          <div class="project-img-wrap">
+            <img src="system.png" alt="System IMS and POS with Sales Forecasting for H2-Med Enterprises" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-overlay-btns">
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            
+            <h3 class="project-title">IMS and POS with Sales Forecasting for H2-Med Enterprises</h3>
+            <p class="project-desc">A system that manages inventory, records sales, and predicts future demand.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── CERTIFICATES ───────────────── -->
+  <section class="section certificates-section" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">// Achievements Unlocked</p>
+        <h2 class="section-title">My <span class="highlight">Certificates</span></h2>
+        <p class="section-desc">Validated expertise through industry-recognized certifications.</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="pythoncertificate1.jpg" alt="Python Essentials 1 Certificate" class="cert-img" loading="lazy" />
+            <div class="cert-img-overlay">
+              <a href="#" class="cert-view-btn" aria-label="View certificate">
+                <i class="fas fa-expand-alt"></i> View
+              </a>
+            </div>
+          </div>
+          <div class="cert-info">
+            
+            <h3 class="cert-title">Python Essentials 1 Certificate</h3>
+            <div class="cert-meta"></div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="pythoncertificate2.jpg" alt="Google IT Support Certificate" class="cert-img" loading="lazy" />
+            <div class="cert-img-overlay">
+              <a href="#" class="cert-view-btn" aria-label="View certificate">
+                <i class="fas fa-expand-alt"></i> View
+              </a>
+            </div>
+          </div>
+          <div class="cert-info">
+            
+            <h3 class="cert-title">Python Essentials 2 Certificate</h3>
+            <div class="cert-meta"></div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="orgcertificate.jpg" alt="JavaScript Algorithms Certificate" class="cert-img" loading="lazy" />
+            <div class="cert-img-overlay">
+              <a href="#" class="cert-view-btn" aria-label="View certificate">
+                <i class="fas fa-expand-alt"></i> View
+              </a>
+            </div>
+          </div>
+          <div class="cert-info">
+            
+            <h3 class="cert-title">Capstone Certificate from the Organization</h3>
+            <div class="cert-meta"></div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="OJT CERT.jpg" alt="OJT Certificate" class="cert-img" loading="lazy" />
+            <div class="cert-img-overlay">
+              <a href="#" class="cert-view-btn" aria-label="View certificate">
+                <i class="fas fa-expand-alt"></i> View
+              </a>
+            </div>
+          </div>
+          <div class="cert-info">
+            
+            <h3 class="cert-title">On-the-Job Training Certificate</h3>
+            <div class="cert-meta"></div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="exhibitcert.jfif" alt="Exhibit Certificate" class="cert-img" loading="lazy" />
+            <div class="cert-img-overlay">
+              <a href="#" class="cert-view-btn" aria-label="View certificate">
+                <i class="fas fa-expand-alt"></i> View
+              </a>
+            </div>
+          </div>
+          <div class="cert-info">
+            
+            <h3 class="cert-title">Capstone Exhibit Presentation Certificate</h3>
+            <div class="cert-meta"></div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="treeplanting.png" alt="tree planting Certificate" class="cert-img" loading="lazy" />
+            <div class="cert-img-overlay">
+              <a href="#" class="cert-view-btn" aria-label="View certificate">
+                <i class="fas fa-expand-alt"></i> View
+              </a>
+            </div>
+          </div>
+          <div class="cert-info">
+            
+            <h3 class="cert-title">Tree Planting Certificate</h3>
+            <div class="cert-meta"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Lightbox ── -->
+    <div class="cert-lightbox" id="certLightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fas fa-times"></i></button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+      </div>
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </section>
+
+  <!-- ───────────────── ABOUT ───────────────── -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">// Who Am I</p>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="avatar-frame">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-img">
+              <img src="kenprof.jfif" alt="Kenneth Profile Photo" class="profile-img" />
+            </div>
+            <div class="corner c1"></div>
+            <div class="corner c2"></div>
+            <div class="corner c3"></div>
+            <div class="corner c4"></div>
+          </div>
+          <div class="about-socials">
+            <a href="https://www.facebook.com/profile.php?id=100071072943049" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/feed/" aria-label="Linkedin" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@a7_200214?_t=8qmcn6pVhhw&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-btn"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h3 class="about-heading">Kenneth &mdash; <span class="highlight">Bachelor of Science in Information Systems</span></h3>
+          <p class="about-bio">
+            Hello, I am Kenneth R. Allones, 23 years old, and a graduating student at Davao del Norte State College, pursuing a Bachelor of Science in Information Systems. Throughout my academic journey, I have gained valuable knowledge and skills in information technology, systems analysis, database management, and software development. As I prepare to graduate, I am eager to apply what I have learned in real-world environments and continue developing my professional skills in the field of Information Systems.
+
+          </p>
+          
+
+          
+
+          <div class="about-cta">
+            <a href="https://drive.google.com/drive/folders/167Sjljco94-gozo2cTtfd-rnW9JJy4zx?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+            <a href="https://www.facebook.com/profile.php?id=100071072943049" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo"><span class="logo-bracket">&lt;</span>KenNeth<span class="logo-bracket">/&gt;</span></p>
+      <p class="footer-copy">&copy; 2026 KenNeth &mdash; Designed &amp; Built with <span class="heart">&#9829;</span> and caffeine.</p>
+      <p class="footer-tag">// Keep building. Keep shipping.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
